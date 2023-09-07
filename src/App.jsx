@@ -23,23 +23,30 @@ function App() {
 
     window.addEventListener("resize", handleResize);
 
-    setTimeout(() => {
-      window.location.pathname = "";
-    }, 5000);
+    // setTimeout(() => {
+    //   window.location.pathname = "";
+    // }, 5000);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
       <main>
-        <h1
-          className="animate-charcter"
-          style={{ width: "100%", fontSize: "3rem", textAlign: "center" }}
-        >
-          ¡Muy Feliz Cumpleaños!
-        </h1>
+        <div>
+          <h1
+            className="animate-charcter"
+            style={{
+              width: "100%",
+              textAlign: "center",
+              fontSize: "2.5rem", // Default font size
+            }}
+          >
+            ¡Muy Feliz Cumpleaños!
+          </h1>
+        </div>
       </main>
       <Confetti
         width={windowDimensions.width}

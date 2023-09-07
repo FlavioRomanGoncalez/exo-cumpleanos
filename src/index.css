@@ -95,3 +95,9 @@ button:focus-visible {
     background-position: 200% center;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 7rem !important;
+  }
+}
