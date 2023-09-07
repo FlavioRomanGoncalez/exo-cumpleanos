@@ -34,7 +34,12 @@ function App() {
   return (
     <>
       <main>
-        <h1 className="animate-charcter">¡Muy Feliz Cumpleaños!</h1>
+        <h1
+          className="animate-charcter"
+          style={{ width: "100%", fontSize: "3rem", textAlign: "center" }}
+        >
+          ¡Muy Feliz Cumpleaños!
+        </h1>
       </main>
       <Confetti
         width={windowDimensions.width}
